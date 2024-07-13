@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ben10</string>
+    <string name="name">Ben10</string>
+    <string name="avatar">avatar</string>
+
+<!--    Powerstats-->
+    <string name="bio">Biograpy</string>
+    <string name="pow">Powerstats</string>
+    <string name="appe">Apperance</string>
+    <string name="work">Work</string>
+    <string name="conn">Connections</string>
+
+</resources>

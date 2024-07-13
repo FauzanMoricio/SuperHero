@@ -1,0 +1,244 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgben10"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <View
+            android:id="@+id/gambar"
+            android:layout_width="170dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <ImageView
+            android:id="@+id/superheroImage"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:src="@color/black"
+            tools:ignore="MissingConstraints"
+            android:contentDescription="@string/avatar"
+            app:layout_constraintEnd_toEndOf="@id/gambar"
+            app:layout_constraintStart_toStartOf="@id/gambar"
+            app:layout_constraintTop_toTopOf="@id/gambar"
+            app:layout_constraintBottom_toBottomOf="@id/gambar"/>
+
+        <View
+            android:id="@+id/name"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/view_bulat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gambar" />
+
+        <TextView
+            android:id="@+id/superheroName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/aladin"
+            android:textColor="@color/black"
+            android:text="asdaasd"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/name"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toTopOf="@id/name" />
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/view_bulat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <TextView
+            android:id="@+id/J_biografi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/aladin"
+            android:text="@string/bio"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/view1"
+            app:layout_constraintStart_toStartOf="@+id/view1"
+            app:layout_constraintTop_toTopOf="@id/view1" />
+
+        <TextView
+            android:id="@+id/Biography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/amaranth"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/view1"
+            app:layout_constraintStart_toStartOf="@+id/view1"
+            app:layout_constraintTop_toBottomOf="@id/J_biografi" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="180dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/view_bulat"
+            app:layout_constraintEnd_toStartOf="@+id/view3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view1" />
+
+            <TextView
+                android:id="@+id/J_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="25sp"
+                android:fontFamily="@font/aladin"
+                android:text="@string/pow"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/view2"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="@id/view2" />
+            <TextView
+                android:id="@+id/Powerstats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/amaranth"
+                app:layout_constraintEnd_toEndOf="@id/view2"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toBottomOf="@id/J_power"/>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="180dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/view_bulat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view1" />
+
+            <TextView
+                android:id="@+id/J_appen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="25sp"
+                android:text="@string/appe"
+                android:fontFamily="@font/aladin"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/view3"
+                app:layout_constraintStart_toStartOf="@+id/view3"
+                app:layout_constraintTop_toTopOf="@id/view3" />
+            <TextView
+                android:id="@+id/Apperance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/amaranth"
+                app:layout_constraintEnd_toEndOf="@id/view3"
+                app:layout_constraintStart_toStartOf="@+id/view3"
+                app:layout_constraintTop_toBottomOf="@id/J_appen"/>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/view_bulat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view3" />
+            <TextView
+                android:id="@+id/J_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="25sp"
+                android:text="@string/work"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aladin"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/view4"
+                app:layout_constraintStart_toStartOf="@+id/view4"
+                app:layout_constraintTop_toTopOf="@id/view4" />
+            <TextView
+                android:id="@+id/Work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/amaranth"
+                app:layout_constraintEnd_toEndOf="@id/view4"
+                app:layout_constraintStart_toStartOf="@+id/view4"
+                app:layout_constraintTop_toBottomOf="@id/J_work"/>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/view_bulat"
+            app:layout_constraintEnd_toStartOf="@+id/view4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view2" />
+
+            <TextView
+                android:id="@+id/J_connet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:text="@string/conn"
+                android:fontFamily="@font/aladin"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/view5"
+                app:layout_constraintStart_toStartOf="@+id/view5"
+                app:layout_constraintTop_toTopOf="@id/view5" />
+            <TextView
+                android:id="@+id/Connection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/amaranth"
+                app:layout_constraintEnd_toEndOf="@id/view5"
+                app:layout_constraintStart_toStartOf="@+id/view5"
+                app:layout_constraintTop_toBottomOf="@id/J_connet"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
